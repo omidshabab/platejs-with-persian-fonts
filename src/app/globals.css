@@ -83,6 +83,7 @@
   --sidebar-ring: oklch(0.708 0 0);
   --brand: oklch(0.623 0.214 259.815);
   --highlight: oklch(0.852 0.199 91.936);
+  --font-estedad: 'Estedad', sans-serif;
 }
 
 .dark {
@@ -128,4 +129,19 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.font-estedad {
+  font-family: var(--font-estedad), sans-serif !important;
+  letter-spacing: -1px !important;
+}
+
+.font-estedad h1,
+.font-estedad h2,
+.font-estedad h3,
+.font-estedad h4,
+.font-estedad h5,
+.font-estedad h6 {
+  font-family: var(--font-estedad), sans-serif !important;
+  letter-spacing: -1px !important;
 }

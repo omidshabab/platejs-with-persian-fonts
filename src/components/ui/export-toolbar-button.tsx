@@ -124,9 +124,19 @@ export function ExportToolbarButton(props: DropdownMenuProps) {
         ${tailwindCss}
         ${katexCss}
         <style>
+          @font-face {
+            font-family: 'Estedad';
+            src: url('/fonts/Estedad-FD[KSHD,wght].woff2') format('woff2');
+            font-weight: 100 900;
+            font-display: swap;
+          }
           :root {
-            --font-sans: 'Inter', 'Inter Fallback';
-            --font-mono: 'JetBrains Mono', 'JetBrains Mono Fallback';
+            --font-sans: 'Estedad', 'Inter', 'Inter Fallback', sans-serif;
+            --font-mono: 'JetBrains Mono', 'JetBrains Mono Fallback', monospace;
+          }
+          body, .editor, .editor * {
+            font-family: 'Estedad', 'Inter', sans-serif !important;
+            letter-spacing: -1px !important;
           }
         </style>
       </head>
